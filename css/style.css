@@ -2,7 +2,8 @@
 
 :root {
     --color-nav: #88bbe4;
-    --color-titulos: #b9e6f5;
+    --color-titulo2: #b9e6f5;
+    --color-titulo:#004B87;
     --color-bg: #fcfaf9;
     --Textos: #000000;
     --color-extra:#103EC7
@@ -17,15 +18,25 @@ body{
     bottom: auto; /* Posiciona en la parte inferior */
     left: 0;
     right: auto;
-    top: 60%;
+    top: 50%;
     width: 50%;
     padding: 40px 20px;
     text-align: left; /* Alineación a la izquierda */
 }
 
 .btn-Carousel {
-    background-color: var(--color-titulos);
+    background-color: var(--color-titulo2);
+    color: var(--color-titulo);
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+}
+
+.titulo-seccion{
+    font-family: Roboto, sans-serif;
+    color: var(--color-titulo);
+
+}
+.prices{
+    color: var(--color-titulo);
 }
