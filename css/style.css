@@ -6,3 +6,9 @@
   --color-fondo: #fcfaf9;
   --Textos: #000000;
 }
+
+.imgLogo{
+    width: 130px;
+    height: auto;
+    padding-bottom: 5px;
+}
