@@ -213,3 +213,41 @@ h1, h2, h3, h4, h5, h6 {
 .back-link:hover {
   color: var(--azul);
 }
+/* caja resumen del pedido */
+.order-summary {
+  background: #fff;
+  border: 1.5px solid var(--borde);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.summary-title {
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  margin-bottom: 20px;
+}
+
+.summary-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--azul-oscuro);
+}
+
+/* boton comprar */
+.btn-comprar {
+  background-color: var(--dorado);
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-comprar:hover {
+  background-color: #e0b030;
+  color: var(--azul-oscuro);
+}
