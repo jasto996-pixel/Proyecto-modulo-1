@@ -29,7 +29,3 @@ body{
     text-decoration: none;
     display: inline-block;
 }
-
-.btn-Carousel:hover {
-    background-color: var(--color-titulos);
-}
