@@ -1,0 +1,24 @@
+/* estilos para carrito */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* colores del sitio */
+:root {
+  --azul: #88bbe4;
+  --azul-claro: #b9e6f5;
+  --azul-oscuro: #1a3a5c;
+  --fondo: #fcfaf9;
+  --dorado: #f5c842;
+  --borde: #dee2e6;
+  --footer-fondo: #eaf4fb;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--fondo);
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
