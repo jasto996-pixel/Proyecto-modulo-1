@@ -45,3 +45,10 @@ body{
     height: 250px;
     object-fit: cover;
 }
+.publi-fondo{
+    background-color: var(--color-titulo2);
+}
+.btn-publi{
+    background-color: var(--color-titulo2);
+    border: 1px solid var(--color-titulo);
+}
