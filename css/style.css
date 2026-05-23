@@ -24,7 +24,6 @@ body{
     padding: 40px 20px;
     text-align: left; /* Alineación a la izquierda */
 }
-
 .btn-Carousel {
     background-color: var(--color-titulo2);
     color: var(--color-titulo);
