@@ -62,3 +62,33 @@ body{
     margin-bottom: 2rem;
     border: none;
 }
+
+.nuestra-pasion {
+    background-color: #C8E6F5;
+    color: #4A8BA8;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* En mobile, ajusta el tamaño de la imagen */
+@media (max-width: 768px) {
+    .seccion-pasion {
+        background-image: url('../img/imagnes-pagina-principal/imagen-responsive-nosotros.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+}
+.img-nosotros{
+
+}
+/* En pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .seccion-pasion {
+        background-size: 250%;
+        background-position: bottom right;
+        min-height: 350px;
+    }
+}
