@@ -1,3 +1,6 @@
+/* estilos para detalle de producto y carrito */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* estilos para carrito */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -19,6 +22,14 @@ body {
   color: #000;
 }
 
+/* titulos con roboto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
@@ -98,6 +109,38 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb a {
   color: var(--azul);
   text-decoration: none;
+}
+
+/* imagen del producto */
+.product-img {
+  object-fit: cover;
+  max-height: 480px;
+  box-shadow: 0 4px 16px rgba(136, 187, 228, 0.2);
+}
+
+/* titulo del producto */
+.product-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--azul-oscuro);
+}
+
+/* estrellas */
+.stars {
+  color: var(--dorado);
+}
+
+/* precio */
+.price-current {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.price-old {
+  font-size: 1.1rem;
+  color: #999;
+  text-decoration: line-through;
 }
 /* titulo del carrito */
 .cart-title {
@@ -250,6 +293,29 @@ h1, h2, h3, h4, h5, h6 {
 .btn-comprar:hover {
   background-color: #e0b030;
   color: var(--azul-oscuro);
+}
+/* titulo de secciones */
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--azul-oscuro);
+}
+
+/* tarjetas de comentarios */
+.review-card {
+  background: #fff;
+  border: 1.5px solid var(--borde);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--azul-claro);
 }
 /* footer */
 .footer-custom {
