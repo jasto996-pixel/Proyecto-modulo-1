@@ -80,28 +80,26 @@ body {
     display: inline-block;
     font-weight: 500;
 }
+.img-nosotros {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
 
-/* En mobile, ajusta el tamaño de la imagen */
+/* En tablet */
 @media (max-width: 768px) {
-    .seccion-pasion {
-        background-image: url('../img/imagnes-pagina-principal/imagen-responsive-nosotros.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom right;
+    .img-nosotros {
+        max-width: 400px;
+        height: auto;
     }
 }
 
-.img-nosotros {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-}
-
-/* En pantallas muy pequeñas */
+/* En móvil */
 @media (max-width: 480px) {
-    .seccion-pasion {
-        background-size: 250%;
-        background-position: bottom right;
-        min-height: 350px;
+    .img-nosotros {
+        max-width: 250px;
+        height: auto;
     }
 }
