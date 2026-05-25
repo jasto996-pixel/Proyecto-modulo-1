@@ -1,6 +1,9 @@
 /* estilos para detalle de producto y carrito */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* estilos para carrito */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* colores del sitio */
 :root {
@@ -27,6 +30,8 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 /* navbar */
 .navbar-custom {
@@ -137,6 +142,67 @@ h6 {
   color: #999;
   text-decoration: line-through;
 }
+/* titulo del carrito */
+.cart-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--azul-oscuro);
+}
+
+/* cada producto del carrito */
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.4fr;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #fff;
+  border: 1.5px solid var(--borde);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* en mobile se acomoda en 2 columnas */
+@media (max-width: 767px) {
+  .cart-item {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cart-item-info {
+    grid-column: 1 / -1;
+  }
+}
+
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-item-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  flex-shrink: 0;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  color: var(--azul-oscuro);
+}
+
+.cart-price {
+  color: #666;
+}
+
+.cart-subtotal {
+  color: var(--azul);
+  font-weight: 700;
+}
+
 /* selector de cantidad */
 .quantity-selector {
   border: 1.5px solid var(--borde);
@@ -165,6 +231,49 @@ h6 {
   font-weight: 600;
   min-width: 32px;
   text-align: center;
+}
+
+/* boton eliminar */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+/* link volver */
+.back-link {
+  color: var(--azul-oscuro);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: var(--azul);
+}
+/* caja resumen del pedido */
+.order-summary {
+  background: #fff;
+  border: 1.5px solid var(--borde);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.summary-title {
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  margin-bottom: 20px;
+}
+
+.summary-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--azul-oscuro);
 }
 
 /* boton comprar */
