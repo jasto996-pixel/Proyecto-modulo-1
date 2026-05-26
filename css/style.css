@@ -87,6 +87,34 @@ body {
     object-fit: contain;
     border-radius: 15px;
 }
+/*  ESTILOS GENERALES DEL FOOTER */
+.custom-footer {
+    background-color: var(--color-nav); 
+    border-top: 3px solid var(--color-titulo); 
+    color: var(--Textos);
+}
+
+/* Estilos para los enlaces de redes sociales */
+.footer-link {
+    color: var(--Textos);
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por las redes */
+.footer-link:hover {
+    background-color: var(--color-bg); 
+    color: var(--color-titulo) !important;
+    transform: translateX(3px); 
+}
+
+/* Ajustes para la lista de información */
+.custom-footer ul li {
+    font-size: 0.95rem;
+    color: #333333;
+}
 
 /* En tablet */
 @media (max-width: 768px) {
