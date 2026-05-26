@@ -36,7 +36,7 @@
                     <div class="card border-0 shadow-sm" style="width: 100%">
                         <div class="card-body p-5">
                             <h2 class="card-title mb-4 fw-bold prices">Envíanos un mensaje</h2>
-                            <form class="needs-validation" novalidate>
+                            <form>
                                 <div class="row g-3 mb-3">
                                     <div class="col-12 col-md-6">
                                         <label for="nombreCompleto" class="form-label">Nombre completo</label>
@@ -78,7 +78,7 @@
                                 <div class="mb-4">
                                     <label for="mensaje" class="form-label">Mensaje</label>
                                     <textarea class="form-control" id="mensaje" rows="4"
-                                              placeholder="¿En qué podemos ayudarte?"></textarea>
+                                              placeholder="¿En qué podemos ayudarte?" required></textarea>
                                 </div>
                                 <button class="btn bg-warning text-dark btn-lg rounded-pill px-3" type="submit">Enviar
                                     Mensaje
@@ -139,29 +139,33 @@
         </div>
         <div class="row pt-5 mt-3 ms-3 me-3">
             <div class="col-12 col-lg-4 mb-sm-0 g-4">
-                <div class="card">
-                    <div class="card-body text-center card border-0 shadow-sm" style="background-color: #E1E8F5;">
-                        <p><i class="bi bi-telephone"></i></p>
+                <div class="card h-100">
+                    <div class="card-body text-center card border-0 shadow-sm"
+                         style="background-color: #E1E8F5; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <p><i class="bi bi-telephone" style="font-size: 2rem;"></i></p>
                         <h5 class="card-title prices">Llamanos</h5>
                         <p class="card-text"> 54 11 569999</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 mb-sm-0 g-4">
-                <div class="card">
-                    <div class="card-body text-center card border-0 shadow-sm" style="background-color: #E1E8F5;"">
-                        <p><i class="bi bi-envelope"></i></p>
+                <div class="card h-100">
+                    <div class="card-body text-center card border-0 shadow-sm"
+                         style="background-color: #E1E8F5; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <p><i class="bi bi-envelope" style="font-size: 2rem;"></i></p>
                         <h5 class="card-title prices">Escribinos </h5>
                         <p class="card-text">hola@tukipatas.com</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 mb-sm-0 g-4">
-                <div class="card">
-                    <div class="card-body text-center card border-0 shadow-sm" style="background-color: #E1E8F5;">
-                        <p><i class="bi bi-share"></i></p>
+                <div class="card h-100">
+                    <div class="card-body text-center card border-0 shadow-sm"
+                         style="background-color: #E1E8F5; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <p><i class="bi bi-share" style="font-size: 2rem;"></i></p>
                         <h5 class="card-title prices">Redes Sociales</h5>
-                        <p><i class="bi bi-instagram"></i> <i class="bi bi-facebook m-3"></i><i class="bi bi-chat-left-dots m-3"></i></p>
+                        <p><i class="bi bi-instagram"></i> <i class="bi bi-facebook m-3"></i><i
+                                class="bi bi-chat-left-dots m-3"></i></p>
                     </div>
                 </div>
             </div>
