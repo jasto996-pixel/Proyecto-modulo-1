@@ -100,3 +100,34 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--azul);
   text-decoration: none;
 }
+/* imagen del producto */
+.product-img {
+  object-fit: cover;
+  max-height: 480px;
+  box-shadow: 0 4px 16px rgba(136, 187, 228, 0.2);
+}
+
+/* titulo del producto */
+.product-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--azul-oscuro);
+}
+
+/* estrellas */
+.stars {
+  color: var(--dorado);
+}
+
+/* precio */
+.price-current {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.price-old {
+  font-size: 1.1rem;
+  color: #999;
+  text-decoration: line-through;
+}
