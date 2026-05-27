@@ -179,3 +179,26 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e0b030;
   color: var(--azul-oscuro);
 }
+/* titulo de secciones */
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--azul-oscuro);
+}
+
+/* tarjetas de comentarios */
+.review-card {
+  background: #fff;
+  border: 1.5px solid var(--borde);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--azul-claro);
+}
