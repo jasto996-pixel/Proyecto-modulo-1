@@ -2,4 +2,143 @@
    width: 100%;
     height: 70vh;
     object-fit: cover;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-nav: #88bbe4;
+    --color-titulo2: #b5c9cf;
+    --color-titulo: #004B87;
+    --color-bg: #fcfaf9;
+    --Textos: #000000;
+    --color-extra: #103EC7
+}
+
+/* estilos generales*/
+body {
+    background-color: var(--color-bg);
+    font-family: Roboto, sans-serif;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: auto; /* Posiciona en la parte inferior */
+    left: 0;
+    right: auto;
+    top: 50%;
+    width: 50%;
+    padding: 40px 20px;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.btn-Carousel {
+    background-color: var(--color-titulo2);
+    color: var(--color-titulo);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.titulo-seccion {
+    font-family: Roboto, sans-serif;
+    color: var(--color-titulo);
+
+}
+
+.prices {
+    color: var(--color-titulo);
+}
+
+.card-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.publi-fondo {
+    background-color: var(--color-titulo2);
+}
+
+.btn-publi {
+    background-color: var(--color-titulo2);
+    border: 1px solid var(--color-titulo);
+}
+
+.contenedor-servicios {
+    background-color: #e8f4f8;
+
+}
+
+.linea-decorativa {
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--color-titulo2) 20%, var(--color-titulo2) 80%, transparent);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.nuestra-pasion {
+    background-color: #C8E6F5;
+    color: #4A8BA8;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;
+}
+.img-nosotros {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+/*  ESTILOS GENERALES DEL FOOTER */
+.custom-footer {
+    background-color: var(--color-nav); 
+    border-top: 3px solid var(--color-titulo); 
+    color: var(--Textos);
+}
+/*logo del footer*/
+.logo-footer{
+    max-width: 180px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.4));
+}
+
+/* Estilos para los enlaces de redes sociales */
+.footer-link {
+    color: var(--Textos);
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por las redes */
+.footer-link:hover {
+    background-color: var(--color-bg); 
+    color: var(--color-titulo) !important;
+    transform: translateX(3px); 
+}
+
+/* Ajustes para la lista de información */
+.custom-footer ul li {
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+/* En tablet */
+@media (max-width: 768px) {
+    .img-nosotros {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+/* En móvil */
+@media (max-width: 480px) {
+    .img-nosotros {
+        max-width: 250px;
+        height: auto;
+    }
 }

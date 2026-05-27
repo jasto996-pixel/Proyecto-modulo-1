@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-bs-theme="light">
+<html lang="es" data-bs-theme="light" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,625 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Página Principal</title>
   </head>
   <body>
     <header></header>
     <main>
+      <!-- sección banner -->
+      <div id="carouselVeterinaria" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselVeterinaria"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselVeterinaria"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselVeterinaria"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/imagnes-pagina-principal/vet-dog.jpg"
+              class="d-block w-100"
+              alt="banner veterianria con un perrito"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fw-bold fs-2 fs-md-1">
+                Citas veterinarias de confianza
+              </h5>
+              <p>
+                Agenda consultas preventivas y chequeos especializados con los
+                mejores profesionales
+              </p>
+              <a href="#" class="btn rouded-4 btn-Carousel"> Agendar cita </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/imagnes-pagina-principal/cat-vet.jpg"
+              class="d-block w-100"
+              alt="banner veterinaria con un gatito"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>
+                Agenda consultas preventivas y chequeos especializados con los
+                mejores profesionales
+              </p>
+              <a href="#" class="btn rouded-4 btn-Carousel"> Agendar cita </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/imagnes-pagina-principal/veterinarios.png"
+              class="d-block w-100"
+              alt="banner de veterinario en una consulta"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>
+                Agenda consultas preventivas y chequeos especializados con los
+                mejores profesionales
+              </p>
+              <a href="#" class="btn rouded-5 btn-Carousel"> Agendar cita </a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselVeterinaria"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselVeterinaria"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Sección categorias de productos -->
+      <section class="py-5 px-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="titulo-seccion mb-2">Alimentos y Snacks</h2>
+            <p class="mb-0">Solo lo mejor para su paladar</p>
+          </div>
+          <a href="#" class="text-decoration-none prices fw-bold text-nowrap">
+            Ver todo <i class="bi bi-chevron-right ms-2"></i>
+          </a>
+        </div>
+        <hr class="linea-decorativa" />
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion1/galletitas-patitas.png"
+                class="card-img-top card-img"
+                alt="publicidad croquetas para mascotas"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">
+                  Croquetas Premium Mix
+                </h5>
+                <p class="card-text mb-3">
+                  Mezcla Balanceda de pollo y vegetales frescos para perro.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$24.99</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion1/golosinas-pets.png"
+                class="card-img-top card-img"
+                alt="Publicidad de golosinas para mascotas"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Snacks de Manzana</h5>
+                <p class="card-text mb-3">
+                  Premios 100% naturales deshidratados sin conservantes.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$8.50</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion1/lata-food.png"
+                class="card-img-top card-img"
+                alt="Publicidad de comida para gatos"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">
+                  Paté de Salmón Gato
+                </h5>
+                <p class="card-text mb-3">Textura suave y sabor intenso</p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$12.90</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion1/juguete.png"
+                class="card-img-top card-img"
+                alt="Publicidad de mordedera dental"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Mordedera Dental</h5>
+                <p class="card-text mb-3">
+                  Limpian sus dientes mientras juegan. Caucho ultra resistente.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$15.00</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion3/alimento.png"
+                class="card-img-top card-img"
+                alt="Publicidad de mordedera dental"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Alimento Premium</h5>
+                <p class="card-text mb-3">
+                  Nueva fórmula desarrollada para una alimentación completa.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$20.00</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- seccion publicidades-->
+      <section class="py-5 px-4">
+        <div
+          id="carousel-publi"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-publi"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-publi"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-publi"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active d-none d-md-block">
+              <div
+                class="row align-items-center g-0 publi-fondo rounded-4 w-100"
+              >
+                <div class="col-md-8 p-5">
+                  <h2 class="fw-bold mb-3 prices">
+                    ¡Primera Cita Veterinaria con 20% de Descuento!
+                  </h2>
+                  <p class="mb-4">
+                    La salud de tu mascota es nuestra prioridad. Agenda hoy
+                    mismo y reciba un kit de bienvenida.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-publi btn-Carousel rounded-pill px-4 py-2"
+                    >Solicitar Cupón</a
+                  >
+                </div>
+                <div class="col-md-4 p-0">
+                  <img
+                    src="./img/seccion3/publicidad1.png"
+                    class="img-fluid w-100"
+                    style="
+                      height: 350px;
+                      object-fit: cover;
+                      border-radius: 0 1rem 1rem 0;
+                    "
+                    alt="publicidad descuento en la primera cita en veterinaria"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div
+                class="row align-items-center g-0 publi-fondo rounded-4 w-100"
+              >
+                <div class="col-md-8 p-5">
+                  <h2 class="fw-bold mb-3 prices">
+                    ¡Descuento del 25% en Productos de higiene y cuidado!
+                  </h2>
+                  <p class="mb-4">
+                    Por que tu mascota merece el mejor cuidado.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-publi btn-Carousel rounded-pill px-4 py-2"
+                    >Solicitar Cupón</a
+                  >
+                </div>
+                <div class="col-md-4 p-0">
+                  <img
+                    src="./img/seccion3/imagen-shampoo.png"
+                    class="img-fluid w-100"
+                    style="
+                      height: 350px;
+                      object-fit: cover;
+                      border-radius: 0 1rem 1rem 0;
+                    "
+                    alt="publicidad descuento productos de higiene en veterinaria"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div
+                class="row align-items-center g-0 publi-fondo rounded-4 w-100"
+              >
+                <div class="col-md-8 p-5">
+                  <h2 class="fw-bold mb-3 prices">
+                    ¡2x1 en aliemento premium para tu mascota 🐩🐈!
+                  </h2>
+                  <p class="mb-4">
+                    Por que tu mascota merece el mejor cuidado.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-publi btn-Carousel rounded-pill px-4 py-2"
+                    >Solicitar Cupón</a
+                  >
+                </div>
+                <div class="col-md-4 p-0">
+                  <img
+                    src="./img/seccion3/alimento.png"
+                    class="img-fluid w-100"
+                    style="
+                      height: 350px;
+                      object-fit: cover;
+                      border-radius: 0 1rem 1rem 0;
+                    "
+                    alt="publicidad descuento en alimentos en veterinaria"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-publi"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-publi"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--sección Higiene y cuidado-->
+      <section class="py-5 px-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="titulo-seccion mb-2">Higiene y cuidado</h2>
+            <p class="mb-0">Salud y frescura en cada detalle.</p>
+          </div>
+          <a href="#" class="text-decoration-none prices fw-bold text-nowrap">
+            Ver todo <i class="bi bi-chevron-right ms-2"></i>
+          </a>
+        </div>
+        <hr class="linea-decorativa" />
+        <div
+          class="row row-cols-1 row-cols-md-2 g-4 pt-3"
+          style="max-width: 800px"
+        >
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion2/shampoo.png"
+                class="card-img-top card-img"
+                alt=" Imágen de Shampoo para mascotas"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Shampoo de Avena</h5>
+                <p class="card-text mb-3">
+                  Especial para pieles sencibles.Aroma relajante y natural.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$18.50</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion2/pagina-principal10.png"
+                class="card-img-top card-img"
+                alt=" Imágen de Kit de cepillado"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Kit de cepillado</h5>
+                <p class="card-text mb-3">
+                  Reduce la caída del pelo en un 90% con nuestros cepillos
+                  ergonómicos.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$18.50</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sección nuestros servicios-->
+      <section
+        class="container-fluid contenedor-servicios py-5"
+        style="background-color: #f0f8fb"
+      >
+        <h3 class="text-center prices">Nuestros servicios profesionales</h3>
+        <div
+          class="row g-4 justify-content-center align-items-stretch"
+          style="width: 100%; margin: 0 auto; max-width: 1200px"
+        >
+          <div class="col-12 col-md-6">
+            <div
+              class="card border-1 rounded-4 h-100"
+              style="
+                background-color: #f8fbfc;
+                border-left: 5px solid var(--color-titulo2);
+              "
+            >
+              <div class="card-body">
+                <h5 class="card-title prices text-center">
+                  <i class="bi bi-bag-plus"></i> Clínica Veterinaria
+                </h5>
+                <p class="card-text text-muted">
+                  Contamos con tecnología de punta y especialistas en medicina
+                  interna, cirugías y diagnósticos por imágen
+                </p>
+                <a href="#" class="btn btn-light prices"
+                  >Agendar Cita <i class="bi bi-calendar3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="card border-1 rounded-4 h-100"
+              style="
+                background-color: #f8fbfc;
+                border-left: 5px solid var(--color-titulo2);
+              "
+            >
+              <div class="card-body">
+                <h5 class="card-title prices text-center">
+                  <i class="bi bi-scissors"></i> Estética y span
+                </h5>
+                <p class="card-text text-muted">
+                  Un ambiente relajado para que el baño no sea estresante. Corte
+                  de raza, span de ozono y corte de uñas.
+                </p>
+                <a href="#" class="btn btn-light prices"
+                  >Reservar turno <i class="bi bi-clock"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--sección juguetes y accesorios-->
+      <section class="py-5 px-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="titulo-seccion text-nowrap mb-2">
+              Juguetes y Accesorios
+            </h2>
+            <p class="mb-0">diversión y estilo para cada aventura.</p>
+          </div>
+          <a href="#" class="text-decoration-none prices fw-bold text-nowrap">
+            Ver todo <i class="bi bi-chevron-right ms-2"></i>
+          </a>
+        </div>
+        <hr class="linea-decorativa" />
+        <div
+          class="row row-cols-1 row-cols-md-2 g-4 pt-3"
+          style="max-width: 800px"
+        >
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion3/correa.png"
+                class="card-img-top card-img"
+                alt=" Imágen de arnés seguros para perros."
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Arnés Pro-walk</h5>
+                <p class="card-text mb-3">
+                  Máximo control y confort.Reflejante para paseos nocturnos
+                  seguros.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$35.00</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./img/seccion3/bandanas.png"
+                class="card-img-top card-img"
+                alt=" Imágen de bandanas para mascotas"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fs-6 fs-md-5 mb-2">Bandanas "Trend"</h5>
+                <p class="card-text mb-3">
+                  Diseños exclusivos hechos a mano. Telas frescas y lavables.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <p class="card-text fw-bold prices mb-0">$12.00</p>
+                  <a href="#" class="btn rounded-4 btn-Carousel">Ver detalle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="custom-footer py-5 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start gy-4">
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+          >
+            <div class="footer-logo mb-2">
+              <img src="./img/imagotipo.png" alt="Imagen logo TukiPatas" class="logo-footer">
+            </div>
+            <p class="text-muted small text-center text-md-start">
+              Todo lo que tu mascota necesita en un solo lugar. Productos de
+              calidad y turnos de atención a un clic.
+            </p>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+          >
+            <h5 class="font-weight-bold mb-3 text-custom">Nuestras Redes</h5>
+            <div class="d-flex flex-column gap-2 text-center">
+              <a href="404.html" class="footer-link text-decoration-none"
+                >📸 Instagram</a
+              >
+              <a href="404.html" class="footer-link text-decoration-none"
+                >🔵 Facebook</a
+              >
+              <a href="404.html" class="footer-link text-decoration-none"
+                >🟢 WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start"
+          >
+            <h5 class="font-weight-bold mb-3 text-custom">Información</h5>
+            <ul
+              class="list-unstyled text-center text-lg-start text-muted small"
+            >
+              <li class="mb-2">
+                📍 <strong>Dirección:</strong> Av. salta 1900, Tucumán
+              </li>
+              <li class="mb-2">
+                ⏰ <strong>Horarios:</strong> Lunes a Sábados de 9:00 a 21:00 hs
+              </li>
+              <li class="mb-2">
+                📞 <strong>Soporte:</strong> info@petcaremarket.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr
+          class="my-4"
+          style="background-color: var(--color-titulo2); opacity: 0.3"
+        />
+        <div class="row">
+          <div class="col-12 text-center text-muted small">
+            <p class="mb-0">
+              &copy; 2026 PetCare Market. - Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
