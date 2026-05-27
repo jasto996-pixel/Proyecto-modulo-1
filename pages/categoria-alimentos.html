@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categoría: Alimentos</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <meta
+      name="description"
+      content="Categoría de alimentos y snacks para mascotas de TukiPatas"
+    />
+    <meta name="author" content="Rosario Pierrestegui" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Pendiente de integrar por Tomás Saucedo: navbar del sitio según mockup general -->
+    </header>
+
+    <!-- Página realizada por Rosario Pierrestegui: detalle de categoría Alimentos -->
+    <main class="pagina-categoria">
+      <!-- Banner principal de la categoría -->
+      <section class="categoria-hero mb-5">
+        <!-- Video banner de la categoría alimentos -->
+        <video class="categoria-hero-video" autoplay muted loop>
+          <source
+            src="../img/imagnes-pagina-principal/alimentos.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="categoria-hero-capa"></div>
+
+        <div class="container categoria-hero-contenido">
+          <nav class="categoria-miga mb-3" aria-label="Ruta de navegación">
+            <a href="../index.html">Inicio</a>
+            <span>/</span>
+            <strong>Alimentos y snacks</strong>
+          </nav>
+
+          <h1>Nutrición Premium para tu mejor amigo</h1>
+          <p>
+            Descubre nuestra selección curada de alimentos y snacks diseñados
+            para fortalecer la salud y felicidad de tu mascota.
+          </p>
+
+          <div class="categoria-etiquetas">
+            <span class="chip-natural">100% Natural</span>
+            <span class="chip-envio">Envío gratis</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de filtros y productos -->
+      <section class="container mb-5">
+        <div class="row g-4">
+          <!-- Columna izquierda: filtros visuales -->
+          <div class="col-12 col-lg-3">
+            <!-- Filtro visual de categorías -->
+            <div class="border borde-categoria rounded-4 p-4 mb-4">
+              <h2 class="h5 mb-3">Categorías</h2>
+
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex justify-content-between mb-2 filtro-activo">
+                  <strong>Todos los snacks</strong>
+                  <strong>42</strong>
+                </li>
+
+                <li class="d-flex justify-content-between mb-2">
+                  <span>Alimento seco</span>
+                  <strong>18</strong>
+                </li>
+
+                <li class="d-flex justify-content-between mb-2">
+                  <span>Alimento húmedo</span>
+                  <strong>12</strong>
+                </li>
+
+                <li class="d-flex justify-content-between">
+                  <span>Snacks funcionales</span>
+                  <strong>12</strong>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Filtro visual de tipo de mascota -->
+            <div
+              class="border borde-categoria rounded-4 p-4 mb-4 filtro-mascota"
+            >
+              <h2 class="h5 mb-3">Tipo de mascota</h2>
+
+              <button class="btn btn-sm boton-mascota boton-mascota-activo">
+                Perros
+              </button>
+              <button class="btn btn-sm boton-mascota">Gatos</button>
+              <button class="btn btn-sm boton-mascota">Cachorros</button>
+            </div>
+          </div>
+
+          <!-- Columna derecha: productos y paginación -->
+          <div class="col-12 col-lg-9">
+            <!-- Barra superior de productos -->
+            <div
+              class="border borde-categoria rounded-4 p-3 mb-4 d-flex justify-content-between align-items-center"
+            >
+              <p class="mb-0">Mostrando <strong>1 de 42</strong> productos</p>
+
+              <form>
+                <label for="ordenar" class="me-2">Ordenar por:</label>
+                <select id="ordenar" name="ordenar">
+                  <option>Relevancia</option>
+                  <option>Menor precio</option>
+                  <option>Mayor precio</option>
+                </select>
+              </form>
+            </div>
+
+            <!-- Grilla de productos -->
+            <div class="row g-4">
+              <!-- Tarjeta producto 1 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="producto-imagen">
+                    <span class="producto-etiqueta etiqueta-top">
+                      Top ventas
+                    </span>
+                    <img
+                      src="../img/imagnes-pagina-principal/alimento-perro.png"
+                      class="card-img-top"
+                      alt="Bolsa de alimento para perro"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title h5">Alimento premium para perros</h3>
+                    <p class="card-text">
+                      Nutrición completa para perros adultos.
+                    </p>
+                    <p class="fw-bold">$12.500</p>
+
+                    <!-- Pendiente de integrar por Ricardo Vosahlo: enlace a detalle de producto -->
+                    <a href="#" class="btn btn-primary">Ver producto</a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Tarjeta producto 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="producto-imagen">
+                    <span class="producto-etiqueta etiqueta-natural">
+                      Natural
+                    </span>
+                    <img
+                      src="../img/imagnes-pagina-principal/snack-perros.png"
+                      class="card-img-top"
+                      alt="Snacks para perro"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title h5">Snacks saludables</h3>
+                    <p class="card-text">
+                      Premios ricos y nutritivos para acompañar su día.
+                    </p>
+                    <p class="fw-bold">$4.800</p>
+
+                    <!-- Pendiente de integrar por Ricardo Vosahlo: enlace a detalle de producto -->
+                    <a href="#" class="btn btn-primary">Ver producto</a>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Tarjeta producto 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="producto-imagen">
+                    <span class="producto-etiqueta etiqueta-nuevo">Nuevo</span>
+                    <img
+                      src="../img/imagnes-pagina-principal/alimento-humedo.png"
+                      class="card-img-top"
+                      alt="Alimento húmedo para mascotas"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h3 class="card-title h5">Alimento húmedo</h3>
+                    <p class="card-text">
+                      Opción suave y sabrosa para complementar su alimentación.
+                    </p>
+                    <p class="fw-bold">$6.300</p>
+
+                    <!-- Pendiente de integrar por Ricardo Vosahlo: enlace a detalle de producto -->
+                    <a href="#" class="btn btn-primary">Ver producto</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Paginación de productos -->
+            <nav aria-label="Paginación de productos">
+              <ul class="pagination justify-content-center mt-5">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Página anterior">
+                    Anterior
+                  </a>
+                </li>
+
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Página siguiente">
+                    Siguiente
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Pendiente de integrar por Nahir: footer del sitio según mockup general -->
+    </footer>
+  </body>
+</html>
