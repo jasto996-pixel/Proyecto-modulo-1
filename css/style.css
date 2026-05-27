@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Estilos generales */
+body {
+  background-color: #fcfaf9;
+  color: #003060;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Banner de la categoria alimentos */
+.categoria-hero {
+  position: relative;
+  background-color: #fcfaf9;
+  height: 450px;
+  overflow: hidden;
+}
+
+.categoria-hero-video {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.categoria-hero-capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+.categoria-hero-contenido {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+}
+
+.categoria-hero h1 {
+  max-width: 680px;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.categoria-hero p {
+  max-width: 720px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.categoria-miga a,
+.categoria-miga span,
+.categoria-miga strong {
+  color: #b9e6f5;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.categoria-etiquetas span {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.chip-natural {
+  background-color: #f7c96d;
+  color: #003060;
+}
+
+.chip-envio {
+  background-color: #b9e6f5;
+  color: #003060;
+}
+
+/* Filtros de la categoria alimentos */
+.borde-categoria {
+  border-color: #c1c7cf;
+}
+
+.filtro-mascota {
+  background-color: #e5f3f8;
+}
+
+.list-unstyled li {
+  color: #41474e;
+  transition: color 300ms linear;
+}
+
+.list-unstyled li:hover {
+  color: #2c6388;
+  cursor: pointer;
+}
+
+.filtro-activo {
+  color: #2c6388;
+}
+
+/* Botones de filtros */
+.boton-mascota {
+  border: 1px solid #88bbe4;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #003060;
+  padding: 0.4rem 1.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  transition: background-color 300ms linear;
+}
+
+.boton-mascota:hover,
+.boton-mascota-activo {
+  background-color: #b9e6f5;
+  color: #003060;
+  cursor: pointer;
+}
+
+/* Tarjetas de productos */
+.card {
+  border-color: #c1c7cf;
+  border-radius: 1rem;
+}
+
+.producto-imagen {
+  position: relative;
+  overflow: hidden;
+}
+
+.producto-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 300ms linear;
+}
+
+.producto-imagen img:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.producto-etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.etiqueta-top {
+  background-color: #f7c96d;
+  color: #003060;
+}
+
+.etiqueta-natural {
+  background-color: #b9e6f5;
+  color: #003060;
+}
+
+.etiqueta-nuevo {
+  background-color: #2c6388;
+  color: #ffffff;
+}
+
+/* Botones de las tarjetas */
+.card .btn-primary {
+  border-radius: 12px;
+  background-color: #88bbe4;
+  border-color: #88bbe4;
+  color: #003060;
+  font-weight: 700;
+  transition: background-color 300ms linear;
+}
+
+.card .btn-primary:hover {
+  background-color: #2c6388;
+  border-color: #2c6388;
+  color: #ffffff;
+}
+
+/* Selector de orden */
+select {
+  border: 1px solid #c1c7cf;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  color: #003060;
+}
+
+select:focus {
+  border-color: #88bbe4;
+}
+
+/* Paginacion */
+.page-link {
+  color: #003060;
+  border-radius: 10px;
+  margin: 0 0.2rem;
+  transition: background-color 300ms linear;
+}
+
+.page-link:hover {
+  background-color: #b9e6f5;
+  color: #003060;
+}
+
+.page-item.active .page-link {
+  background-color: #2c6388;
+  border-color: #2c6388;
+  color: #ffffff;
+}
+
+/* Banner de la categoria higiene */
+.higiene-hero {
+  position: relative;
+  background-color: #003060;
+  overflow: hidden;
+}
+
+.higiene-hero-img {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.higiene-banner-animado {
+  animation-name: zoomSuave;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.higiene-hero-capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 48, 96, 0.25);
+}
+
+.higiene-hero-contenido {
+  position: absolute;
+  top: 28%;
+  left: 1rem;
+  right: 0;
+  color: #ffffff;
+  animation-name: apareceBanner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.higiene-hero h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.higiene-hero p {
+  max-width: 650px;
+  font-size: 1.1rem;
+}
+
+/* Presentacion de la categoria higiene */
+.higiene-presentacion h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Animacion de entrada del texto */
+@keyframes apareceBanner {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animacion suave de la imagen del banner */
+@keyframes zoomSuave {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .categoria-hero h1,
+  .higiene-hero h1 {
+    font-size: 2rem;
+  }
+
+  .categoria-hero p,
+  .higiene-hero p {
+    font-size: 0.95rem;
+  }
+
+  .categoria-etiquetas span {
+    margin-bottom: 0.5rem;
+  }
+}
