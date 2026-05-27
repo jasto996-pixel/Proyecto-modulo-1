@@ -1,0 +1,115 @@
+/* Estilos especificos para el formulario login/registro */
+body {
+  background-color: var(--color-bg);
+  color: var(--Textos);
+  font-family: sans-serif;
+}
+
+/* Botón Principal */
+.btn-primary-custom {
+  background-color: var(--color-titulo) !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #6da4d2 !important;
+  color: #ffffff !important;
+}
+.text-unete-registro {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  z-index: 9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+}
+
+/* Botones Secundarios (Google / Facebook) */
+.btn-outline-custom {
+  border: 2px solid var(--color-titulo2) !important;
+  color: var(--color-titulo) !important;
+  background-color: transparent !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-titulo2) !important;
+  color: #ffffff !important;
+}
+
+/* Enlace de recuperación de contraseña */
+.recover-link {
+  color: var(--color-titulo2);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.recover-link:hover {
+  color: #6da4d2;
+  text-decoration: underline !important;
+}
+
+/* Inputs de los formularios */
+.input-custom {
+  border: 1px solid var(--color-titulo2) !important;
+  background-color: var(--color-bg) !important;
+  color: var(--Textos) !important;
+}
+
+/* Efecto en el input */
+.input-custom:focus {
+  border-color: var(--color-titulo) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 75, 135, 0.25) !important;
+  background-color: #ffffff !important;
+}
+
+/* Color para los textos sueltos */
+.text-custom {
+  color: var(--Textos) !important;
+}
+
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+}
+.img-fondo {
+  display: block;
+  width: 100%;
+}
+.logo-overlay {
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  width: 140px;
+  z-index: 10;
+}
+.logo-overlay-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 140px;
+  z-index: 10;
+}
+
+.text-bienvenida-foto {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 0 20px;
+}
