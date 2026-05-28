@@ -497,6 +497,8 @@ body {
 
   .carousel-caption {
     top: 30%;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 20px 15px;
   }
@@ -526,6 +528,8 @@ body {
 
   .carousel-caption {
     top: 25%;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 15px 10px;
   }
