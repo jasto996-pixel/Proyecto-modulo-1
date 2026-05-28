@@ -44,36 +44,6 @@ Este sitio web presenta:
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```
-tukipatas/
-├── index.html                      # Página principal
-├── pages/
-│   ├── registro.html               # Página de registro
-│   ├── login.html                  # Página de login
-│   ├── detalle-del-producto.html   # Detalle de producto individual
-│   ├── carrito.html                # Carrito de compras
-│   ├── nosotros.html               # Información del equipo (Acerca de)
-│   └── contactos.html              # Formulario de contacto
-├── css/
-│   ├── style.css                   # Estilos principales
-│   ├── login-registro.css          # Estilos para login y registro
-│   └── product-cart.css            # Estilos para productos y carrito
-├── img/
-│   ├── logotipo.png                # Logo del sitio
-│   ├── imagotipo.png               # Imagotipo
-│   ├── seccion1/                   # Imágenes de primera sección
-│   ├── seccion2/                   # Imágenes de segunda sección
-│   ├── seccion3/                   # Imágenes de tercera sección
-│   ├── avatares/                   # Fotos del equipo
-│   ├── imagnes-pagina-principal/   # Imágenes principales
-│   └── (diversos productos y referencias)
-└── README.md                       # Este archivo
-```
-
----
-
 ## 🚀 Cómo Usar
 
 ### Instalación Local
