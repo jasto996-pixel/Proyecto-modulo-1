@@ -461,14 +461,47 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .categoria-hero,
+  .higiene-hero {
+    height: auto;
+    background-color: #003060;
+  }
+
+  .categoria-hero-video,
+  .higiene-hero-img {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: none;
+  }
+
+  .higiene-banner-animado {
+    animation-name: none;
+  }
+
+  .categoria-hero-capa,
+  .higiene-hero-capa {
+    display: none;
+  }
+
+  .categoria-hero-contenido,
+  .higiene-hero-contenido {
+    position: static;
+    padding: 1.5rem;
+    background-color: #003060;
+  }
+
   .categoria-hero h1,
   .higiene-hero h1 {
     font-size: 2rem;
+    max-width: 100%;
   }
 
   .categoria-hero p,
   .higiene-hero p {
     font-size: 0.95rem;
+    max-width: 100%;
   }
 
   .categoria-etiquetas span {
