@@ -160,19 +160,14 @@ body {
 /* Banner de la categoria alimentos */
 .categoria-hero {
   position: relative;
-  background-color: #fcfaf9;
-  height: 450px;
+  background-color: #003060;
   overflow: hidden;
 }
 
 .categoria-hero-video {
-  position: absolute;
-  top: 20%;
-  left: 0;
   width: 100%;
   height: auto;
   display: block;
-  transform: translateY(-50%);
 }
 
 .categoria-hero-capa {
@@ -386,16 +381,14 @@ body {
 
 .higiene-hero-img {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: block;
 }
 
 .higiene-banner-animado {
-  animation-name: zoomSuave;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-name: apareceBanner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 
 .higiene-hero-capa {
