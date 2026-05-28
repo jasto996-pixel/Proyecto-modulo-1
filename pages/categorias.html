@@ -15,8 +15,8 @@
     <title>Categorias</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary stiky-top">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <!--logo de pagina-->
         <div class="container">
           <a class="navbar-brand text-primary" href="../index.html">
@@ -56,26 +56,17 @@
                 <a class="nav-link" href="./servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link" href="./contactos.html">Contacto</a>
               </li>
             </ul>
           </div>
           <div class="d-flex align-items-center gap-3">
             <!--carrito-->
-            <button class="btn btn-outline-primary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-cart3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
-                />
+            <a href="./carrito.html" class="btn btn-outline-primary" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg>
-            </button>
+            </a>
             <!--login-->
             <a href="#" class="btn btn-primary rounded-pill px-2"> Acceder </a>
           </div>
@@ -113,7 +104,6 @@
               aria-label="Banner 3"
             ></button>
           </div>
-
           <div class="carousel-inner">
             <div class="carousel-item active higiene-hero">
               <img
@@ -255,13 +245,13 @@
           >
             <h5 class="font-weight-bold mb-3 text-custom">Nuestras Redes</h5>
             <div class="d-flex flex-column gap-2 text-center">
-              <a href="404.html" class="footer-link text-decoration-none"
+              <a href="error404.html" class="footer-link text-decoration-none"
                 >📸 Instagram</a
               >
-              <a href="404.html" class="footer-link text-decoration-none"
+              <a href="error404.html" class="footer-link text-decoration-none"
                 >🔵 Facebook</a
               >
-              <a href="404.html" class="footer-link text-decoration-none"
+              <a href="error404.html" class="footer-link text-decoration-none"
                 >🟢 WhatsApp</a
               >
             </div>
