@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito - TukiPatas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/product-cart.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logotipo.png" alt="TukiPatas" height="38" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto ms-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorías</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <input
+              type="text"
+              class="form-control search-input d-none d-lg-block"
+              placeholder="Buscar productos..."
+            />
+            <a href="carrito.html" class="cart-btn position-relative">
+              <i class="bi bi-cart3 fs-5"></i>
+              <span class="cart-badge">3</span>
+            </a>
+            <a href="./login.html" class="btn btn-outline-nav">Login</a>
+            <a href="./registro.html" class="btn btn-primary-custom">Crear cuenta</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active">Carrito de compras</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- carrito -->
+    <section class="container my-4">
+      <h1 class="cart-title mb-4">Tu carrito</h1>
+
+      <div class="row g-4">
+        <!-- lista de productos -->
+        <div class="col-12 col-lg-8">
+          <!-- producto 1 -->
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <img
+                src="../img/alimento.jpg"
+                alt="Alimento Premium Cordero"
+                class="cart-item-img"
+              />
+              <div>
+                <p class="cart-item-name">Alimento Premium Cordero</p>
+                <small class="text-muted">Perros Adultos - 15kg</small>
+              </div>
+            </div>
+            <div class="quantity-selector">
+              <button class="qty-btn">-</button>
+              <span>1</span>
+              <button class="qty-btn">+</button>
+            </div>
+            <div class="cart-price">$45.00</div>
+            <div class="cart-subtotal">$45.00</div>
+            <button class="delete-btn">
+              <i class="bi bi-trash3"></i>
+            </button>
+          </div>
+
+          <!-- producto 2 -->
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <img
+                src="../img/rascador.jpg"
+                alt="Torre Rascador Moderna"
+                class="cart-item-img"
+              />
+              <div>
+                <p class="cart-item-name">Torre Rascador Moderna</p>
+                <small class="text-muted">Gris Minimalista</small>
+              </div>
+            </div>
+            <div class="quantity-selector">
+              <button class="qty-btn">-</button>
+              <span>2</span>
+              <button class="qty-btn">+</button>
+            </div>
+            <div class="cart-price">$32.50</div>
+            <div class="cart-subtotal">$65.00</div>
+            <button class="delete-btn">
+              <i class="bi bi-trash3"></i>
+            </button>
+          </div>
+
+          <!-- producto 3 -->
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <img
+                src="../img/shampoo-carrito.jpg"
+                alt="Shampoo Hipoalergénico"
+                class="cart-item-img"
+              />
+              <div>
+                <p class="cart-item-name">
+                  Shampoo Hipoalergénico para Mascotas
+                </p>
+                <small class="text-muted">500ml</small>
+              </div>
+            </div>
+            <div class="quantity-selector">
+              <button class="qty-btn">-</button>
+              <span>1</span>
+              <button class="qty-btn">+</button>
+            </div>
+            <div class="cart-price">$24.99</div>
+            <div class="cart-subtotal">$24.99</div>
+            <button class="delete-btn">
+              <i class="bi bi-trash3"></i>
+            </button>
+          </div>
+
+          <!-- boton volver -->
+          <div class="mt-3">
+            <a href="../index.html" class="back-link">
+              <i class="bi bi-arrow-left me-1"></i> Seguir comprando
+            </a>
+          </div>
+        </div>
+
+        <!-- resumen del pedido -->
+        <div class="col-12 col-lg-4">
+          <div class="order-summary">
+            <h5 class="summary-title">Resumen del pedido</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Subtotal</span>
+              <span>$134.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Envío estimado</span>
+              <span class="text-success fw-semibold">Gratis</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Impuestos</span>
+              <span>$10.80</span>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between summary-total mb-3">
+              <span>Total</span>
+              <span>$145.79</span>
+            </div>
+            <!-- finalizar compra va a la pagina 404 -->
+            <a href="./error404.html" class="btn btn-comprar w-100"
+              >Finalizar compra</a
+            >
+            <p class="text-center mt-2 mb-0">
+              <small class="text-muted"
+                ><i class="bi bi-shield-check me-1"></i>Pago 100% Seguro</small
+              >
+            </p>
+            <hr />
+            <!-- cupon -->
+            <p class="small fw-semibold mb-2">¿Tienes un cupón?</p>
+            <div class="d-flex gap-2">
+              <input type="text" class="form-control" placeholder="Código" />
+              <button class="btn btn-primary-custom">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="custom-footer py-5 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start gy-4">
+        <div
+          class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+        >
+          <div class="footer-logo mb-2">
+            <img
+              src="../img/imagotipo.png"
+              alt="Imagen logo TukiPatas"
+              class="logo-footer"
+            />
+          </div>
+          <p class="text-muted small text-center text-md-start">
+            Todo lo que tu mascota necesita en un solo lugar. Productos de
+            calidad y turnos de atención a un clic.
+          </p>
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+        >
+          <h5 class="font-weight-bold mb-3 text-custom">Nuestras Redes</h5>
+          <div class="d-flex flex-column gap-2 text-center">
+            <a href="error404.html" class="footer-link text-decoration-none"
+              >📸 Instagram</a
+            >
+            <a href="error404.html" class="footer-link text-decoration-none"
+              >🔵 Facebook</a
+            >
+            <a href="error404.html" class="footer-link text-decoration-none"
+              >🟢 WhatsApp</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="col-12 col-md-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start"
+        >
+          <h5 class="font-weight-bold mb-3 text-custom">Información</h5>
+          <ul class="list-unstyled text-center text-lg-start text-muted small">
+            <li class="mb-2">
+              📍 <strong>Dirección:</strong> Av. salta 1900, Tucumán
+            </li>
+            <li class="mb-2">
+              ⏰ <strong>Horarios:</strong> Lunes a Sábados de 9:00 a 21:00 hs
+            </li>
+            <li class="mb-2">
+              📞 <strong>Soporte:</strong> info@petcaremarket.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr
+        class="my-4"
+        style="background-color: var(--color-titulo2); opacity: 0.3"
+      />
+      <div class="row">
+        <div class="col-12 text-center text-muted small">
+          <p class="mb-0">
+            &copy; 2026 PetCare Market. - Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- bootstrap para el navbar en mobile -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
